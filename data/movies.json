@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Inception",
+    "year": 2010,
+    "genre": "Sci-Fi, Thriller",
+    "rating": 8.8,
+    "duration": "148 min",
+    "director": "Christopher Nolan",
+    "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
+    "description": "A skilled thief is given a chance to erase his criminal history by implanting an idea into a target's subconscious through shared dreams."
+  },
+  {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "genre": "Action, Crime, Drama",
+    "rating": 9.0,
+    "duration": "152 min",
+    "director": "Christopher Nolan",
+    "cast": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+    "description": "Batman faces the chaos unleashed by the Joker as Gotham descends into madness, forcing him to question his limits as a hero."
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "genre": "Adventure, Drama, Sci-Fi",
+    "rating": 8.6,
+    "duration": "169 min",
+    "director": "Christopher Nolan",
+    "cast": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
+    "description": "A team of astronauts embarks on a mission to find a new habitable planet as Earth faces environmental collapse."
+  },
+  {
+    "title": "The Prestige",
+    "year": 2006,
+    "genre": "Drama, Mystery, Thriller",
+    "rating": 8.5,
+    "duration": "130 min",
+    "director": "Christopher Nolan",
+    "cast": ["Christian Bale", "Hugh Jackman", "Scarlett Johansson"],
+    "description": "Two rival magicians engage in a fierce battle of wits and deception, pushing the boundaries of science and illusion."
+  }
+]
