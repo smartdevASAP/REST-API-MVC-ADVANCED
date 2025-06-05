@@ -129,6 +129,7 @@ exports.updateMovies = async (req, res) => {
     const movieToUpdate = await movie.findByIdAndUpdate(
       req.params.id,
       req.body,
+      //RUNS THA VALIDATORS THAT HAVE BEEN DECLARED IN THE SCHEMA;
       {
         new: true,
         runValidators: true,
