@@ -20,7 +20,7 @@ const moviesSchema = new mongoose.Schema(
         validator: function (year) {
           return year < 2000 && year > 2099;
         },
-        message: `the year {YEAR} is not within the bracket year`,
+        message: `the year is not within the bracket year`,
       },
     },
     genre: {

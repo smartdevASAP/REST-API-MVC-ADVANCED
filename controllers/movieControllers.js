@@ -100,10 +100,8 @@ exports.postMovies = async (req, res) => {
       },
     });
   } catch (err) {
-    res.status(404).json({
-      status: "fail",
-      message: err.message,
-    });
+    const error = new customError(err.message, 404);
+    next(err);
   }
 };
 //FINDING MOVIE BY ID;
@@ -198,22 +196,22 @@ exports.getMovieStats = async (req, res) => {
     });
   }
 };
-//NOT WORKING BECAUSE OF HOW I STATED MY SCHEMA;
-exports.getMovieByGenre = async (req, res) => {
-  try {
-    const genre = req.params.genre;
-    const movies = await movie.aggregate([{ $unwind: "$genre" }]);
-    res.status(200).json({
-      status: "success",
-      count: movies.length,
-      data: {
-        movie: movies,
-      },
-    });
-  } catch (err) {
-    response.status(404).json({
-      status: "fail",
-      message: err.message,
-    });
-  }
-};
+// NOT WORKING BECAUSE OF HOW I STATED MY SCHEMA;
+// exports.getMovieByGenre = async (req, res) => {
+//   try {
+//     const genre = req.params.genre;
+//     const movies = await movie.aggregate([{ $unwind: "$genre" }]);
+//     res.status(200).json({
+//       status: "success",
+//       count: movies.length,
+//       data: {
+//         movie: movies,
+//       },
+//     });
+//   } catch (err) {
+//     response.status(404).json({
+//       status: "fail",
+//       message: err.message,
+//     });
+//   }
+// };
