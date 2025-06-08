@@ -100,7 +100,7 @@ exports.postMovies = async (req, res) => {
       },
     });
   } catch (err) {
-    const error = new customError(err.message, 404);
+    const error = new customError(err.message, 400);
     next(err);
   }
 };
